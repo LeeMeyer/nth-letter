@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nth-letter Test</title>
+
+  <!-- This page uses the compiled UMD bundle from dist/ -->
+  <style>
+    /* Example: color the 2nd letter of every <p> red */
+    p::nth-letter(2) {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Example: underline the 4th letter inside the .demo class */
+    .demo::nth-letter(odd) {
+      text-decoration: underline;
+    }
+
+    body {
+      background-color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1>nth-letter (UMD) Test</h1>
+
+  <p>This is a test of nth-letter.</p>
+  <p class="demo">This demo should underline every odd character.</p>
+
+  <script src="./dist/nth-letter.umd.js"></script>
+</body>
+</html>

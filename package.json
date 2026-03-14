@@ -1,0 +1,23 @@
+{
+  "name": "@leemeyer/nth-letter",
+  "version": "1.0.15",
+  "description": "Simulate the long requested nth-letter CSS selector",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/nth-letter.es.js",
+  "files": ["dist"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel watch",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "get-css-data": "^2.1.1",
+    "gsap": "^3.14.2"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0",
+    "vite-plugin-dts": "^4.5.4"
+  }
+}

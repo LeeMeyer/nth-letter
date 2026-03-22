@@ -41,11 +41,11 @@ import nthLetter from '@leemeyer/nth-letter';
 
 ## How it Works
 
-The library parses your CSS for `::nth-letter()` selectors, rewrites them to use shadow DOM and CSS parts, and applies the styles to individual characters using GSAP's SplitText.
+The library parses your CSS for `::nth-letter()` selectors, rewrites them to use `:nth-child()` selectors, and splits the text of each matched element into individual `<span>` elements in the Light DOM. This means the characters are fully accessible, inspectable, and styleable with standard CSS — no Shadow DOM required.
 
 ## Browser Support
 
-Works in modern browsers that support Shadow DOM and ES6.
+Works in all modern browsers that support ES6.
 
 ## License
 

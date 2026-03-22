@@ -1,6 +1,6 @@
 {
   "name": "@leemeyer/nth-letter",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "Simulate the long requested nth-letter CSS selector",
   "license": "ISC",
   "author": "",

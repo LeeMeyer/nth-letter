@@ -1,5 +1,7 @@
 # nth-letter
 
+> **⚠️ Experimental:** This library is still in early development. Use with caution in production environments.
+
 A JavaScript library that simulates the long-requested `::nth-letter()` CSS pseudo-element. It allows you to style individual letters within text elements using CSS selectors like `::nth-letter(2)`.
 
 ## Installation

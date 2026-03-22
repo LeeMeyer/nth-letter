@@ -18,17 +18,77 @@
       text-decoration: underline;
     }
 
-    body {
-      background-color: black;
-    }
+  body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.rainbow::nth-letter(n) {
+  color: #f432a0;
+}
+
+.rainbow::nth-letter(2n) {
+  color: #f08925;
+}
+
+.rainbow::nth-letter(3n) {
+  color: #f1c232;
+}
+
+.rainbow::nth-letter(4n) {
+  color: #00FF00;
+}
+
+.rainbow::nth-letter(5n) {
+   color: #3aabff;
+}
+
+.rainbow::nth-letter(6n) {
+  color: #FFA500;
+}
+
+.rainbow::nth-letter(6n) {
+  color: #FF0000;
+}
+
+.fancy::nth-letter(n) {
+  display: inline-block;
+  padding: 20px 10px;
+  text-transform: uppercase;
+}
+
+h1.fancy::nth-letter(n) {
+  display: inline-block;
+  padding: 20px 10px;
+  color: white;
+}
+
+h1.fancy::nth-letter(even) {
+  transform: skewY(15deg);
+  background: #C97A7A;
+}
+
+h1.fancy::nth-letter(odd) {
+  transform: skewY(-15deg);
+  background: #8B3F3F;
+}
+
+
+
   </style>
+  <script>
+  </script>
 </head>
 <body>
-  <h1>nth-letter (UMD) Test</h1>
-
-  <p>This is a test of nth-letter.</p>
-  <p class="demo">This demo should underline every odd character.</p>
-
+<div class="container">
+  <h1 class="fancy">fancy</h1>
+  <h1 class="rainbow">Rainbow</h1>
+</div>
   <script src="./dist/nth-letter.umd.js"></script>
 </body>
 </html>

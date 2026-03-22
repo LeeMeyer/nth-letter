@@ -1,12 +1,14 @@
 {
   "name": "@leemeyer/nth-letter",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Simulate the long requested nth-letter CSS selector",
   "license": "ISC",
   "author": "",
   "type": "module",
   "main": "dist/nth-letter.es.js",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "parcel watch",

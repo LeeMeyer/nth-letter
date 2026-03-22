@@ -18,7 +18,7 @@ getCssData({
         selectors.add(selector);
         nthArgs.add(args);
         // Use :nth-child instead of ::nth-letter
-        return `${selector} span:nth-child(${args})`;
+        return `${selector} .char:nth-child(${args})`;
       }
     );
 
@@ -28,15 +28,7 @@ getCssData({
       document.querySelectorAll(selector).forEach(el => {
         if (el.hasAttribute('data-nth-letter')) return;
         el.setAttribute('data-nth-letter', 'attached');
-        // Split text into spans in the Light DOM
-        const text = el.textContent;
-        el.innerHTML = '';
-        for (let i = 0; i < text.length; i++) {
-          const span = document.createElement('span');
-          span.className = 'char';
-          span.textContent = text[i];
-          el.appendChild(span);
-        }
+        new SplitText(el, { type: 'chars', charsClass: 'char' });
       });
     });
   }

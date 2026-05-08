@@ -7,7 +7,6 @@ getCssData({
     const selectors = new Set();
     const nthArgs = new Set();
 
-    // Remove CSS comments
     cssText = cssText.replace(/\/\*[\s\S]*?\*\//g, '');
 
     // Replace ::nth-letter with :nth-child in CSS

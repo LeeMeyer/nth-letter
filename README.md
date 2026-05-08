@@ -39,6 +39,10 @@ p::nth-letter(2) {
 import nthLetter from '@leemeyer/nth-letter';
 ```
 
+## Background
+
+This library is explained in depth in the CSS-Tricks article [_Let's Use the Nonexistent ::nth-letter Selector Now_](https://css-tricks.com/using-nonexistent-nth-letter-selector-now/).
+
 ## How it Works
 
 The library parses your CSS for `::nth-letter()` selectors, rewrites them to use `:nth-child()` selectors, and splits the text of each matched element into individual `<span>` elements in the Light DOM. This means the characters are fully accessible, inspectable, and styleable with standard CSS — no Shadow DOM required.
